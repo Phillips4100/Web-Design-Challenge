@@ -1,0 +1,13 @@
+section {
+    border: 1px solid blue;
+    width: 100%;
+    float: left;
+  }
+
+img {
+    float: right;
+}
+
+#plot_text {
+    text-align: center;
+}
