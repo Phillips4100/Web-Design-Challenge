@@ -15,9 +15,9 @@
 </head>
 
 <body>
-<div class="bg">
+<div class="bg img-fluid">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#">API Challenge</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -27,74 +27,63 @@
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="#">Comparisons</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link" href="../WebVisualizations/data table.html">Data</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown link
+            visualizations
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
+            <a class="dropdown-item" href="../visualizations/maxtemp.html">Temperature</a>
+            <a class="dropdown-item" href="../visualizations/humidity.html">Humidity</a>
+            <a class="dropdown-item" href="../visualizations/wind.html">Wind</a>
+            <a class="dropdown-item" href="../visualizations/clouds.html">Clouds</a>
           </div>
         </li>
       </ul>
     </div>
   </nav>
-  
-  <!-- Navigation -->
-  <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <div class='container-fluid'>
-        <div class="navbar-header">
-           <a class="navbar-brand" href="#">API Challenge</a>
-        </div>
-        <div id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-link">
-              <a href="../visualizations/maxtemp.html"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visualizations<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li class="dropdown-header">visualizations</li>
-                <li><a href="../visualizations/maxtemp.html">Temperature</a><li>
-                <li><a href="../visualizations/humidity.html">Humidity</a></li>
-                <li><a href="../visualizations/wind.html">Wind</a></li>
-                <li><a href="../visualizations/clouds.html">Clouds</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Comparisons</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Data</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </nav> -->
- 
-
-  <!-- Image
-  <img src="https://github.com/Phillips4100/Web-Design-Challenge/blob/master/assets/equatorsign.png?raw=true" alt="Spongebob!" /> -->
   <br>
-  <div class='container'>
-    <div class='row'>
-      <div class='col-md-12'>
-        <h1>What's the Weather Like?</h1>
+  <div class="container">
+    <div class="row">
+      <h1 class="col-md-8">What's the Weather Like?</h1>
+    </div>
+    <div class="row">
+      <div class="col-md-8 ">Summary:
+        <p>
+          Whether financial, political, or social -- data's true power lies in its ability to answer questions definitively. So let's take what you've learned about Python requests, APIs, and JSON traversals to answer a fundamental question: "What's the weather like as we approach the equator?"</p>
+        <p>
+          Now, we know what you may be thinking: "Duh. It gets hotter..."
+        <br>
+          But, if pressed, how would you prove it?</p>
+        <p>
+          In this example, you'll be creating a Python script to visualize the weather of 500+ cities across the world of varying distance from the equator. To accomplish this, you'll be utilizing a simple Python library, the OpenWeatherMap API, and a little common sense to create a representative model of weather across world cities</p>
+        <p>
+          Your first requirement is to create a series of scatter plots to showcase the following relationships:<br>
+          <ul>
+            <li>Temperature (F) vs. Latitude</li>
+            <li>Humidity (%) vs. Latitude</li>
+            <li>Cloudiness (%) vs. Latitude</li>
+            <li>Wind Speed (mph) vs. Latitude</li>
+          </ul>
+        </p>
+          
+      </div>
+      <div class="col-xs-2 col-sm-2 col-md-4 col-lg-4 center">visualizations
+        <picture>
+          <!-- <source srcset="../assets/TemperatureInWorldCities.png" type="image/svg+xml"> -->
+          <a href="../visualizations/maxtemp.html" alt="temp plot" ><img src="../assets/TemperatureInWorldCities.png" target='_blank' class="img-fluid img-thumbnail"></a>
+          <a href="../visualizations/humidity.html" alt="humid plot" ><img src="../assets/HumidityInWorldCities.png" alt="humid plot" class="img-fluid img-thumbnail"></a>
+          <a href="../visualizations/clouds.html" alt="cloud plot" ><img src="../assets/CloudsInWorldCities.png" alt="cloud plot" class="img-fluid img-thumbnail"></a>
+          <a href="../visualizations/wind.html" alt="wind plot" ><img src="../assets/windInWorldCities.png" alt="wind plot" class="img-fluid img-thumbnail"></a>
+        </picture>
       </div>
     </div>
   </div>
-  <!-- Placeholder link -->
-  <a href="#">This is placeholder link goes nowhere, for now</a>
+
 </div>
 </body>
 
