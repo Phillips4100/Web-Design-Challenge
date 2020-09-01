@@ -7,63 +7,58 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="bkgrd.css">
+  <link rel="stylesheet" href="../WebVisualizations/bkgrd.css">
+
 
 <head>
-  <meta charset="UTF-8">
-  <title>Humidity</title>
-  <link rel="stylesheet" href="vis.css">
+  <title>Max Temperature</title>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" role="navigation">
+<body class='bg'>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" role="navigation">
     <a class="navbar-brand" href="../WebVisualizations/landingpage.html">API Challenge / Humidity</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="../WebVisualizations/landingpage.html">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Comparisons</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../WebVisualizations/data table.html">Data</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            visualizations
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="../visualizations/maxtemp.html">Temperature</a>
-            <a class="dropdown-item" href="../visualizations/humidity.html">Humidity</a>
-            <a class="dropdown-item" href="../visualizations/wind.html">Wind</a>
-            <a class="dropdown-item" href="../visualizations/clouds.html">Clouds</a>
-          </div>
-        </li>
-      </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="../WebVisualizations/landingpage.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="../visualizations/maxtemp.html">Temperature</a>
+                    <a class="dropdown-item" href="../visualizations/humidity.html">Humidity</a>
+                    <a class="dropdown-item" href="../visualizations/wind.html">Wind</a>
+                    <a class="dropdown-item" href="../visualizations/clouds.html">Clouds</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../WebVisualizations/comparisons.html">Comparisons</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../WebVisualizations/data table.html">Data</a>
+            </li>
+        </ul>
     </div>
-  </nav>
-  <h1>humidity by latitude</h1>
-
-  <section>
-    
-    <img src="https://github.com/Phillips4100/Web-Design-Challenge/blob/master/assets/HumidityInWorldCities.png?raw=true" alt="humidity by latitude" />
-
-    <p1 class="plot_text">
+</nav>
+<div class="container">
+  <div class='row single-post mt-5 no-gutters'>
+    <div Class='col-md-12'>
+      <h1><br></h1>
+      <div class="image-wrapper float-left pr-3">
+        <img src="../assets/HumidityInWorldCities.png" alt="max temp by latitude">
+      </div>
+      <p class="font-weight-bold">Humidity and Latitude:</p>
+      <div class="single-post-content-wrapper p-3">
         The world distribution of humidity can be portrayed for different uses by different indexes. To appraise the quantity of water carried by the entire atmosphere, the moisture in an air column above a given point on Earth is expressed as a depth of liquid water. It varies from 0.5 mm (0.02 inch) over the Himalayas and 2 mm (0.08 inch) over the poles in winter to 8 mm (0.3 inch) over the Sahara, 54 mm (2 inches) in the Amazon region, and 64 mm (2.5 inches) over India during the wet season. During summer the air over the United States transports 16 mm (0.6 inch) of water vapour over the Great Basin and 45 mm (1.8 inches) over Florida.
-        <br>
+        <br><br>
         The humidity of the surface air may be mapped as vapour pressure, but a map of this variable looks much like that of temperature. Warm places are moist, and cool ones are dry; even in deserts the vapour pressure is normally 13 mb (0.01 standard atmosphere), whereas over the northern seas it is only about 4 mb (0.004 standard atmosphere). Certainly the moisture in materials in two such areas will be just the opposite, so relative humidity is a more widely useful index.
-    </p1>
-</section>
-  <br>
-
-
-
-  <!-- Placeholder link -->
-  <a href="#">This is placeholder link goes nowhere, for now</a>
+      </div>
+    </div>
+  </div>
+</div>
 
 </body>
 

@@ -7,63 +7,58 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="bkgrd.css">
+  <link rel="stylesheet" href="../WebVisualizations/bkgrd.css">
+
 
 <head>
-  <meta charset="UTF-8">
-  <title>Wind</title>
-  <link rel="stylesheet" href="vis.css">
+  <title>Wind Speed</title>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" role="navigation">
+<body class='bg'>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" role="navigation">
     <a class="navbar-brand" href="../WebVisualizations/landingpage.html">API Challenge / Wind Speed</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="../WebVisualizations/landingpage.html">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Comparisons</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../WebVisualizations/data table.html">Data</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            visualizations
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="../visualizations/maxtemp.html">Temperature</a>
-            <a class="dropdown-item" href="../visualizations/humidity.html">Humidity</a>
-            <a class="dropdown-item" href="../visualizations/wind.html">Wind</a>
-            <a class="dropdown-item" href="../visualizations/clouds.html">Clouds</a>
-          </div>
-        </li>
-      </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="../WebVisualizations/landingpage.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="../visualizations/maxtemp.html">Temperature</a>
+                    <a class="dropdown-item" href="../visualizations/humidity.html">Humidity</a>
+                    <a class="dropdown-item" href="../visualizations/wind.html">Wind</a>
+                    <a class="dropdown-item" href="../visualizations/clouds.html">Clouds</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../WebVisualizations/comparisons.html">Comparisons</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../WebVisualizations/data table.html">Data</a>
+            </li>
+        </ul>
     </div>
-  </nav>
-  <h1>Wind by latitude</h1>
-
-  <section>
-    
-    <img src="https://github.com/Phillips4100/Web-Design-Challenge/blob/master/assets/windInWorldCities.png?raw=true" alt="humidity by latitude" />
-
-    <p1 class="plot_text">
-        The prevailing wind in a region of the Earth's surface is a surface wind that blows predominantly from a particular direction. The dominant winds are the trends in direction of wind with the highest speed over a particular point on the Earth's surface.[citation needed][dubious – discuss] A region's prevailing and dominant winds are the result of global patterns of movement in the Earth's atmosphere.[1] In general, winds are predominantly easterly at low latitudes globally. In the mid-latitudes, westerly winds are dominant, and their strength is largely determined by the polar cyclone. In areas where winds tend to be light, the sea breeze/land breeze cycle is the most important cause of the prevailing wind; in areas which have variable terrain, mountain and valley breezes dominate the wind pattern. Highly elevated surfaces can induce a thermal low, which then augments the environmental wind flow</p1>
-        <br>
-    <p2>
-        Wind roses are tools used to display the direction of the prevailing wind. Knowledge of the prevailing wind allows the development of prevention strategies for wind erosion of agricultural land, such as across the Great Plains. Sand dunes can orient themselves perpendicular to the prevailing wind direction in coastal and desert locations. Insects drift along with the prevailing wind, but the flight of birds is less dependent on it. Prevailing winds in mountain locations can lead to significant rainfall gradients, ranging from wet across windward-facing slopes to desert-like conditions along their lee slopes. Prevailing winds can vary due to the uneven heating of the Earth.</p2>
-</section>
-  <br>
-
-
-
-  <!-- Placeholder link -->
-  <a href="#">This is placeholder link goes nowhere, for now</a>
+</nav>
+<div class="container">
+  <div class='row single-post mt-5 no-gutters'>
+    <div Class='col-md-12'>
+      <h1><br></h1>
+      <div class="image-wrapper float-left pr-3">
+        <img src="https://github.com/Phillips4100/Web-Design-Challenge/blob/master/assets/windInWorldCities.png?raw=true" alt="humidity by latitude">
+      </div>
+      <p class="font-weight-bold">Wind Speed and Latitude:</p>
+      <div class="single-post-content-wrapper p-3">
+        The prevailing wind in a region of the Earth's surface is a surface wind that blows predominantly from a particular direction. The dominant winds are the trends in direction of wind with the highest speed over a particular point on the Earth's surface.[citation needed][dubious – discuss] A region's prevailing and dominant winds are the result of global patterns of movement in the Earth's atmosphere.[1] In general, winds are predominantly easterly at low latitudes globally. In the mid-latitudes, westerly winds are dominant, and their strength is largely determined by the polar cyclone. In areas where winds tend to be light, the sea breeze/land breeze cycle is the most important cause of the prevailing wind; in areas which have variable terrain, mountain and valley breezes dominate the wind pattern. Highly elevated surfaces can induce a thermal low, which then augments the environmental wind flow
+        <br><br>
+        Wind roses are tools used to display the direction of the prevailing wind. Knowledge of the prevailing wind allows the development of prevention strategies for wind erosion of agricultural land, such as across the Great Plains. Sand dunes can orient themselves perpendicular to the prevailing wind direction in coastal and desert locations. Insects drift along with the prevailing wind, but the flight of birds is less dependent on it. Prevailing winds in mountain locations can lead to significant rainfall gradients, ranging from wet across windward-facing slopes to desert-like conditions along their lee slopes. Prevailing winds can vary due to the uneven heating of the Earth.
+      </div>
+    </div>
+  </div>
+</div>
 
 </body>
 
