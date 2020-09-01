@@ -10,4 +10,14 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    /* overflow: hidden; */
+}
+
+.stay {
+    position: fixed;
+}
+
+.pad{
+    margin-top: 50px;
 }
