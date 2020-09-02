@@ -1,6 +1,6 @@
-body, html {
+/* body, html {
   height: 100%;
-}
+} */
 
 .bg { 
     background-image: url("https://github.com/Phillips4100/Web-Design-Challenge/blob/master/assets/equatorsign.png?raw=true");
@@ -13,16 +13,20 @@ body, html {
     background-attachment: fixed;
     /* overflow: hidden; */
 }
-
-.stay {
-    position: fixed;
+.table_2 {
+    visibility: hidden;
 }
 
-.pad{
-    margin-top: 50px;
-}
+@media only screen and (max-width: 800px) {
+    .table_1 {
+        visibility: hidden;
+    }
 
-.vh {
-
-    min-height: 100vh;
+    .table_2 {
+        visibility: visible;
+        position: absolute;
+        /* left: 0px; */
+        top: 265px;
+        z-index: -1;
+    }
 }
